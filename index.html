@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Cryptocurrency Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cyberpunk Cryptocurrency Exchange</h1>
+        </header>
+        <main>
+            <section class="cryptocurrencies">
+                <h2>Cryptocurrencies</h2>
+                <ul>
+                    <li>
+                        <img src="btc.png" alt="Bitcoin">
+                        <span>Bitcoin (BTC)</span>
+                    </li>
+                    <li>
+                        <img src="eth.png" alt="Ethereum">
+                        <span>Ethereum (ETH)</span>
+                    </li>
+                    <li>
+                        <img src="usdt.png" alt="Tether">
+                        <span>Tether (USDT)</span>
+                    </li>
+                    <li>
+                        <img src="usdc.png" alt="USD Coin">
+                        <span>USD Coin (USDC)</span>
+                    </li>
+                    <li>
+                        <img src="trx.png" alt="Tronix">
+                        <span>Tronix (TRX)</span>
+                    </li>
+                    <li>
+                        <img src="sol.png" alt="Solana">
+                        <span>Solana (SOL)</span>
+                    </li>
+                    <li>
+                        <img src="ltc.png" alt="Litecoin">
+                        <span>Litecoin (LTC)</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="exchange">
+                <h2>Exchange</h2>
+                <form>
+                    <label for="from-crypto">From:</label>
+                    <select id="from-crypto" name="from-crypto">
+                        <option value="btc">Bitcoin (BTC)</option>
+                        <option value="eth">Ethereum (ETH)</option>
+                        <option value="usdt">Tether (USDT)</option>
+                        <option value="usdc">USD Coin (USDC)</option>
+                        <option value="trx">Tronix (TRX)</option>
+                        <option value="sol">Solana (SOL)</option>
+                        <option value="ltc">Litecoin (LTC)</option>
+                    </select>
+                    <label for="to-crypto">To:</label>
+                    <select id="to-crypto" name="to-crypto">
+                        <option value="btc">Bitcoin (BTC)</option>
+                        <option value="eth">Ethereum (ETH)</option>
+                        <option value="usdt">Tether (USDT)</option>
+                        <option value="usdc">USD Coin (USDC)</option>
+                        <option value="trx">Tronix (TRX)</option>
+                        <option value="sol">Solana (SOL)</option>
+                        <option value="ltc">Litecoin (LTC)</option>
+                    </select>
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount">
+                    <button id="exchange-button">Exchange</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
