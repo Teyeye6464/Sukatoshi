@@ -1,0 +1,157 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: #444;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.cryptocurrencies {
+    background-color: #555;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cryptocurrencies h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.cryptocurrencies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cryptocurrencies li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.cryptocurrencies li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.cryptocurrencies li span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.exchange {
+    background-color: #666;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.exchange h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.exchange form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.exchange label {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.exchange select {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+}
+
+.exchange input[type="number"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+}
+
+.exchange button[type="button"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #666;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.exchange button[type="button"]:hover {
+    background-color: #444;
+}
+
+/* Animation Styles */
+
+.exchange-button {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
